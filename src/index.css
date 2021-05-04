@@ -32,6 +32,7 @@ h4 {
 .section-center {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .title {
@@ -56,6 +57,8 @@ h4 {
   /* flex-direction: column; */
   margin: auto;
   padding: 1rem;
+  transition: all 0.3s linear;
+  opacity: 0;
 }
 
 .quote {
@@ -109,4 +112,14 @@ h4 {
   left: 5%;
   transform: translateY(-50%);
   background-color: transparent;
+}
+
+.next-person {
+  transform: translate(100%, -50%);
+}
+.previous-person {
+  transform: translate(-200%, -50%);
+}
+.current-person {
+  opacity: 1;
 }
